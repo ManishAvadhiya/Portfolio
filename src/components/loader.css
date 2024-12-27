@@ -1,0 +1,35 @@
+.title svg path {
+    stroke: white;
+    stroke-width: 2.7;
+    /* Initial transparent fill */
+    stroke-dasharray: 90;
+    stroke-dashoffset: 90;
+    animation: textAnimation 2s ease-in-out infinite forwards;
+  }
+  
+  @keyframes textAnimation {
+    0% {
+      stroke-dashoffset: 90;
+      fill: transparent;
+    }
+    80% {
+      fill: transparent; /* Maintain transparent fill during the path animation */
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  
+  .title svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  /* Adjust SVG size for mobile screens */
+  @media (max-width: 768px) {
+    .title svg {
+      width: 60px;
+      height: 60px;
+    }
+  }
