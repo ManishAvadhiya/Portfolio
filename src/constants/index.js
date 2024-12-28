@@ -43,7 +43,7 @@ export const PROJECTS = [
     title: "StyleVerse: E-Commerce Platform",
     image:project1,
     description:
-      "Designed a dynamic e-commerce platform delivering the latest trends in fashion with a seamless user experience. Features include shopping cart, coupon codes, Stripe payments, and an admin panel for product management and analytics.",
+      "Designed a dynamic e-commerce platform delivering the latest trends in fashion with a seamless user experience.Customers can add items to their cart, apply coupon codes for discounts, and complete payments via Stripe. The Admin panel enables sellers to manage products, feature items, delete listings, and track analytics, including total sales, revenue, customer count, and a dynamic 7-day sales graph.",
     technologies: ["React.js", "Tailwind CSS","Framer Motion","Node.js","Express","Redis","Cloudinary", "MongoDB", "Stripe"],
     link: "https://style-verse.onrender.com/",
   },
@@ -52,7 +52,7 @@ export const PROJECTS = [
     image:project2,
 
     description:
-      "Designed a platform for real-time communication, enabling seamless one-to-one and group interactions. Features include WebSocket-powered instant messaging, file sharing, and user/group management.",
+      "Designed a platform for real-time communication, enabling seamless one-to-one and groupinteractions Real-time chatting via WebSockets, emphasizing instant interactions.Additional functionalities like sharing photos and files, and the ability to search for new users and form groups, demonstrating advanced features beyond basic messaging.",
     technologies: ["React.js","Tailwind CSS", "Shadcn", "Node.js","Express", "MongoDB", "WebSockets"],
     link: "https://chitchatapp-i2jg.onrender.com/",
   },
@@ -61,7 +61,7 @@ export const PROJECTS = [
     image:project3,
 
     description:
-      "Designed a user-friendly interface for buying or renting real estate properties. Features include property photos, interactive React Leaflet map, and landlord messaging functionality.",
+      "Designed a user-friendly interface for buying or renting real estate properties, including flats, houses, mansions, condos, and apartments. The platform allows users to view property photos and explore locations on an interactive React Leaflet map, enhancing the browsing experience. Users can also message landlords directly for inquiries and additional details.",
     technologies: ["React.js", "Leaflet", "SCSS"],
     link: "https://real-estate-manish.vercel.app/",
   },
