@@ -52,12 +52,12 @@ const DockNavbar = () => {
 
   const socialIcons = [
     {
-      url: "https://github.com",
+      url: "https://github.com/ManishAvadhiya",
       icon: <FaGithub size={20} />,
       label: "GitHub",
     }, // GitHub icon
     {
-      url: "https://linkedin.com",
+      url: "https://www.linkedin.com/in/manish-avadhiya-a54563281/",
       icon: <FaLinkedin size={20} />,
       label: "LinkedIn",
     }, // LinkedIn icon
