@@ -26,12 +26,13 @@ const Projects = () => {
                 src={p.image}
                 alt={p.title}
                 height={150}
-                width={150}
-                className="mb-6 rounded "
+                width={"sm:100px"}
+                
+                className="mb-6  rounded "
               />
             </motion.div>
             <motion.div
-              className="w-full  lg:w-3/4"
+              className="w-full px-6 lg:w-3/4"
               initial={{ x: 20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 1 }}

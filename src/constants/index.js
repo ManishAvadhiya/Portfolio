@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With hands-on experience in modern web technologies, I aim to deliver innovative solutions that enhance user experience and drive growth.`;
 
@@ -41,6 +41,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "StyleVerse: E-Commerce Platform",
+    image:project1,
     description:
       "Designed a dynamic e-commerce platform delivering the latest trends in fashion with a seamless user experience. Features include shopping cart, coupon codes, Stripe payments, and an admin panel for product management and analytics.",
     technologies: ["React.js", "Tailwind CSS","Framer Motion","Node.js","Express","Redis","Cloudinary", "MongoDB", "Stripe"],
@@ -48,6 +49,8 @@ export const PROJECTS = [
   },
   {
     title: "ChitChat: Real-Time Chatting Platform",
+    image:project2,
+
     description:
       "Designed a platform for real-time communication, enabling seamless one-to-one and group interactions. Features include WebSocket-powered instant messaging, file sharing, and user/group management.",
     technologies: ["React.js","Tailwind CSS", "Shadcn", "Node.js","Express", "MongoDB", "WebSockets"],
@@ -55,6 +58,8 @@ export const PROJECTS = [
   },
   {
     title: "RealEstate: Property Buy-Sell Platform",
+    image:project3,
+
     description:
       "Designed a user-friendly interface for buying or renting real estate properties. Features include property photos, interactive React Leaflet map, and landlord messaging functionality.",
     technologies: ["React.js", "Leaflet", "SCSS"],

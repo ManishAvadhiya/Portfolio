@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from "../constants";
-import profilepic from "../assets/kevinRushProfile.png";
+import profilepic from "../assets/PortfolioProfile.jpg";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -46,7 +46,7 @@ const Hero = () => {
               
             }}
           >
-            <img src={profilepic} alt="" />
+            <img src={profilepic} alt="" className="rounded-2xl"/>
           </motion.div>
         </div>
       </div>
