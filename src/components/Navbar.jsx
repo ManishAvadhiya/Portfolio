@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* <img src={logo} alt="logo" className="mx-2 w-10 hover:-translate-y-full transition-transform"/> */}
       </motion.section>
 
-     <div className="grid place-content-center gap-2 py-8 px-8  text-sm">
+     <div className="grid place-content-center gap-2 py-8 px-8 text-sm ">
      <FlipLink  href="mailto:avadhiyamanish@gmail.com" >
               avadhiyamanish@gmail.com
       </FlipLink>

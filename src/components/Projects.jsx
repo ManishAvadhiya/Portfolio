@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { PROJECTS } from "../constants";
+import { ArrowUpRightIcon } from "lucide-react";
 
 const Projects = () => {
   return (
@@ -15,9 +16,12 @@ const Projects = () => {
       <div>
         {PROJECTS.map((p, i) => (
           <div key={i} className="mb-8 flex flex-wrap lg:justify-center">
-            <motion.div className="w-full lg:w-1/4" initial={{ x: -20, opacity: 0 }}
+            <motion.div
+              className="w-full lg:w-1/4"
+              initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1 }}>
+              transition={{ duration: 1 }}
+            >
               <img
                 src={p.image}
                 alt={p.title}
@@ -26,19 +30,28 @@ const Projects = () => {
                 className="mb-6 rounded "
               />
             </motion.div>
-            <motion.div className="w-full max-w-xl lg:w-3/4" initial={{ x: 20, opacity: 0 }}
+            <motion.div
+              className="w-full  lg:w-3/4"
+              initial={{ x: 20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1 }}>
+              transition={{ duration: 1 }}
+            >
               <h6 className="mb-2 font-semibold ">{p.title}</h6>
-              <p className="mb-4 text-neutral-400 ">{p.description}</p>
+              <p className="mb-4 text-neutral-400 ">{p.description}</p> 
+              <div className="flex flex-wrap gap-3 ">
               {p.technologies.map((t, i) => (
                 <span
-                  key={i}
-                  className="mr-2 rounded  px-2 py-1 text-sm font-bold text-neutral-900 bg-neutral-300"
+                key={i}
+                className=" rounded  px-2 py-1 text-sm font-bold text-neutral-900 bg-neutral-300"
                 >
                   {t}
                 </span>
               ))}
+              </div>
+              <button className="bg-neutral-300 mt-3 py-1 rounded-full sm:px-3 px-3 text-black flex justify-center items-center   font-bold ">
+                <a href={p.link}>Visit</a>
+                <ArrowUpRightIcon className="ml-2 sm:size-4 size-3" />
+              </button>
             </motion.div>
           </div>
         ))}

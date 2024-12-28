@@ -40,7 +40,7 @@ const DockNavbar = () => {
   }, [lastScrollY]);
 
   const navIcons = [
-    { href: "/", icon: <FaHome size={20} />, label: "Home" }, // Home icon
+    { href: "#home", icon: <FaHome size={20} />, label: "Home" }, // Home icon
     { href: "#about", icon: <FaUser size={20} />, label: "About" }, // About icon
     {
       href: "#projects",
@@ -71,10 +71,10 @@ const DockNavbar = () => {
       
       >
       {/* Desktop & Tablet Navbar */}
-      <nav className="flex justify-between items-center p-2  " >
+      <nav className="flex justify-between items-center p-2 " >
         {/* Reduced padding */}
         <TooltipProvider>
-          <Dock className="flex space-x-2 items-center  border-gray-300 border-opacity-50">
+          <Dock className="flex space-x-2 items-center  border-gray-300 border-opacity-50 ">
             {/* Reduced horizontal spacing */}
 
             {/* Navigation Icons */}
@@ -86,7 +86,7 @@ const DockNavbar = () => {
                     {/* Reduced padding */}
                     <a
                       href={navItem.href}
-                      className="hover:text-gray-400 transition-colors duration-300"
+                      className="hover:text-gray-400 transition-colors duration-300 "
                       title={navItem.label}
                     >
                       {navItem.icon}
