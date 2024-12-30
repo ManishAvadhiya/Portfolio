@@ -1,5 +1,5 @@
 import React from "react";
-import abtimg from "../assets/about.jpg";
+
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ArrowUpRightIcon } from "lucide-react";

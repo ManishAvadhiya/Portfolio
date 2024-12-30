@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { PROJECTS } from "../constants";
 import { ArrowUpRightIcon } from "lucide-react";
+import { BsGithub } from "react-icons/bs";
 
 const Projects = () => {
+
   return (
     <div className="border-b border-neutral-900 pb-4" id="projects">
       <motion.h1
@@ -49,10 +51,16 @@ const Projects = () => {
                 </span>
               ))}
               </div>
+              <div className="flex justify-start items-center gap-4">
               <button className="bg-neutral-300 mt-3 py-1 rounded-full sm:px-3 px-3 text-black flex justify-center items-center   font-bold ">
-                <a href={p.link}>Visit</a>
+                <a href={p.link} target="_blank">Visit</a>
                 <ArrowUpRightIcon className="ml-2 sm:size-4 size-3" />
               </button>
+              <button className="bg-neutral-300 mt-3 py-1 rounded-full sm:px-3 px-3 text-black flex justify-center items-center   font-bold ">
+                <a href={p.git} target="_blank">GitHub</a>
+                <BsGithub className="ml-2 sm:size-4 size-3" />
+              </button>
+              </div>
             </motion.div>
           </div>
         ))}

@@ -46,6 +46,7 @@ export const PROJECTS = [
       "Designed a dynamic e-commerce platform delivering the latest trends in fashion with a seamless user experience.Customers can add items to their cart, apply coupon codes for discounts, and complete payments via Stripe. The Admin panel enables sellers to manage products, feature items, delete listings, and track analytics, including total sales, revenue, customer count, and a dynamic 7-day sales graph.",
     technologies: ["React.js", "Tailwind CSS","Framer Motion","Node.js","Express","Redis","Cloudinary", "MongoDB", "Stripe"],
     link: "https://style-verse.onrender.com/",
+    git:"https://github.com/ManishAvadhiya/Style_Verse",
   },
   {
     title: "ChitChat: Real-Time Chatting Platform",
@@ -55,6 +56,7 @@ export const PROJECTS = [
       "Designed a platform for real-time communication, enabling seamless one-to-one and groupinteractions Real-time chatting via WebSockets, emphasizing instant interactions.Additional functionalities like sharing photos and files, and the ability to search for new users and form groups, demonstrating advanced features beyond basic messaging.",
     technologies: ["React.js","Tailwind CSS", "Shadcn", "Node.js","Express", "MongoDB", "WebSockets"],
     link: "https://chitchatapp-i2jg.onrender.com/",
+    git:"https://github.com/ManishAvadhiya/ChitChatApp",
   },
   {
     title: "RealEstate: Property Buy-Sell Platform",
@@ -64,6 +66,7 @@ export const PROJECTS = [
       "Designed a user-friendly interface for buying or renting real estate properties, including flats, houses, mansions, condos, and apartments. The platform allows users to view property photos and explore locations on an interactive React Leaflet map, enhancing the browsing experience. Users can also message landlords directly for inquiries and additional details.",
     technologies: ["React.js", "Leaflet", "SCSS"],
     link: "https://real-estate-manish.vercel.app/",
+    git:"https://github.com/ManishAvadhiya/RealEstate",
   },
 ];
 
