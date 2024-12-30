@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
 import { CopyrightIcon } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
 
@@ -58,7 +59,7 @@ const Contact = () => {
             </button>
           </motion.form>
 
-      <motion.div className="text-center sm:flex gap-3 sm:items-center sm:justify-around tracking-tighter">
+      <motion.div className="text-center sm:flex  gap-3 sm:items-center sm:justify-around tracking-tighter ">
         <motion.p
           className="my-4 "
           initial={{ x: -20, opacity: 0 }}
@@ -76,23 +77,51 @@ const Contact = () => {
           {CONTACT.phoneNo}
         </motion.p>
         <motion.a
-          className="my-4 underline"
-          href="#"
+          className="my-4 underline block"
+          href="mailto:avadhiyamanish@gmail.com"
           initial={{ x: -40, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
+          
           {CONTACT.email}
         </motion.a>
-        <motion.div
+       
+        
+        
+        <motion.a
+        target="_blank"
+          className="my-4 underline font-bold block"
+          href={CONTACT.linkedIn}
+          initial={{ x: 40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          
+          LinkedIn
+        </motion.a>
+        <motion.a
+        target="_blank"
+          className="my-4 underline font-bold block"
+          href={CONTACT.github}
+          initial={{ x: -40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          
+          GitHub
+        </motion.a>
+        
+        
+      </motion.div>
+      <motion.div
           className="my-4 "
           initial={{ x: 20, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <p className="flex justify-center items-center gap-3"><CopyrightIcon className="w-6"/> 2024 Manish Avadhiya</p>
+          <p className="flex justify-center items-center gap-3"><CopyrightIcon className="w-5"/> 2024 Manish Avadhiya</p>
         </motion.div>
-      </motion.div>
     </div>
   );
 };
